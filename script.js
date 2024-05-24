@@ -7,6 +7,8 @@ document.getElementById('appointmentForm').addEventListener('submit', function(e
     if (date && suggestion) {
         fetch('https://script.google.com/macros/s/AKfycbwal5_WcY1VCzgNdEp0KHiPFIuFuAj2L2GhoLNinIerINw2b6U_Hjdsjh_mm7hMndcO/exec', {
             method: 'POST',
+            mode: "no-cors", 
+            cache: "no-cache",
             headers: {
                 'Content-Type': 'application/json'
             },
