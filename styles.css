@@ -18,6 +18,14 @@ body {
     text-align: center;
 }
 
+select {
+    appearance: none;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    align-items: center;
+  }
+
 h1 {
     color: #333;
 }
