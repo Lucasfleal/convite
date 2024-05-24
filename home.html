@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite para Encontro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convite Especial</h1>
+        <p>Oi, amor! Escolha uma data e sugira o que você quer fazer no nosso encontro:</p>
+        <form id="appointmentForm">
+            <label for="date">Data:</label>
+            <select id="date" name="date" required>
+                <option value="30/04">30/04</option>
+                <option value="31/04">31/04</option>
+                <option value="01/05">01/05</option>
+                <option value="02/06">02/06</option>
+            </select>
+            <label for="suggestion">Sugestão:</label>
+            <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="confirmation" style="display: none;">
+            <h2>Obrigada!</h2>
+            <p>Nosso encontro está marcado para <span id="selectedDate"></span>.</p>
+            <p>Sua sugestão: <span id="selectedSuggestion"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
